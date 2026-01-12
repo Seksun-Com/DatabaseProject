@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resident Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script/home.js"></script>
+</head>
+<body>
+
+    <div id="links">
+        <h2>Navigation</h2>
+        <div class = "nav">
+            <button onclick="navigateTo('addContract.html')">Contract Management</button>
+            <button onclick="navigateTo('viewContract.html')">Contract Table</button>
+            <button onclick="navigateTo('addResident.html')">Resident Management</button>
+            <button onclick="navigateTo('viewResident.html')">Resident Table</button>
+            <button onclick="navigateTo('addInvoiceDorm.html')">Invoice Management</button>
+            <button onclick="navigateTo('viewInvoiceDorm.html')">Invoice Table</button>
+        </div>
+    </div>
+
+    <h1>Resident Management</h1>
+
+    <h2>Add Resident</h2>
+    <form id="addResidentForm">
+        <label for="residentId">Resident ID:</label>
+        <input type="text" id="residentId" name="residentId"><br>
+        <label for="residentName">Resident Name:</label>
+        <input type="text" id="residentName" name="residentName"><br>
+        <label for="telNumber">Telephone Number:</label>
+        <input type="text" id="telNumber" name="telNumber"><br>
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact"><br>
+        <button type="submit">Add Resident</button>
+    </form>
+    <script src="./script/addResident.js"></script>
+</body>
+</html>

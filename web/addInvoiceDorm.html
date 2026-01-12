@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script/home.js"></script>
+</head>
+<body>
+
+    <div id="links">
+        <h2>Navigation</h2>
+        <div class = "nav">
+            <button onclick="navigateTo('addContract.html')">Contract Management</button>
+            <button onclick="navigateTo('viewContract.html')">Contract Table</button>
+            <button onclick="navigateTo('addResident.html')">Resident Management</button>
+            <button onclick="navigateTo('viewResident.html')">Resident Table</button>
+            <button onclick="navigateTo('addInvoiceDorm.html')">Invoice Management</button>
+            <button onclick="navigateTo('viewInvoiceDorm.html')">Invoice Table</button>
+        </div>
+    </div>
+
+    <h1>Invoice Management</h1>
+
+    <div id="addInvoiceSection">
+        <h2>Add Invoice</h2>
+        <form id="addInvoiceForm">
+            <label for="invoiceId">Invoice ID:</label>
+            <input type="text" id="invoiceId" name="invoiceId"><br>
+            
+            <label for="roomNumber">Room Number:</label>
+            <input type="text" id="roomNumber" name="roomNumber"><br>
+
+            <label for="residentId">Resident ID:</label>
+            <input type="text" id="residentId" name="residentId"><br>
+
+            <label for="waterCost">Water Cost:</label>
+            <input type="number" id="waterCost" name="waterCost" step="0.01"><br>
+
+            <label for="electricityCost">Electricity Cost:</label>
+            <input type="number" id="electricityCost" name="electricityCost" step="0.01"><br>
+
+            <label for="rent">Rent:</label>
+            <input type="number" id="rent" name="rent" step="0.01"><br>
+
+            <button type="submit">Add Invoice</button>
+        </form>
+    </div>
+
+    <script src ="./script/addInvoiceDorm.js"></script>
+</body>
+</html>

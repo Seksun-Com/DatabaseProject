@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contract Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script/home.js"></script>
+</head>
+<body>
+
+    <div id="links">
+        <h2>Navigation</h2>
+        <div class = "nav">
+            <button onclick="navigateTo('addContract.html')">Contract Management</button>
+            <button onclick="navigateTo('viewContract.html')">Contract Table</button>
+            <button onclick="navigateTo('addResident.html')">Resident Management</button>
+            <button onclick="navigateTo('viewResident.html')">Resident Table</button>
+            <button onclick="navigateTo('addInvoiceDorm.html')">Invoice Management</button>
+            <button onclick="navigateTo('viewInvoiceDorm.html')">Invoice Table</button>
+        </div>
+    </div>
+
+    <h1>Contract Management</h1>
+
+    <div id="addContractSection">
+        <h2>Add Contract</h2>
+        <form id="addContractForm">
+            <label for="contractId">Contract ID:</label>
+            <input type="text" id="contractId" name="contractId"><br>
+
+            <label for="dateIn">Date In:</label>
+            <input type="date" id="dateIn" name="dateIn"><br>
+
+            <label for="dateOut">Date Out:</label>
+            <input type="date" id="dateOut" name="dateOut"><br>
+
+            <label for="roomNumber">Room Number:</label>
+            <input type="text" id="roomNumber" name="roomNumber"><br>
+
+            <label for="residentId">Resident ID:</label>
+            <input type="text" id="residentId" name="residentId"><br>
+
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" id="employeeId" name="employeeId"><br>
+
+            <button type="submit">Add Contract</button>
+        </form>
+    </div>
+    <script src='./script/addContract.js'></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script/home.js"></script>
+</head>
+
+<body>
+
+    <div id="links">
+        <h2>Navigation</h2>
+        <div class="nav">
+            <button onclick="navigateTo('addContract.html')">Contract Management</button>
+            <button onclick="navigateTo('viewContract.html')">Contract Table</button>
+            <button onclick="navigateTo('addResident.html')">Resident Management</button>
+            <button onclick="navigateTo('viewResident.html')">Resident Table</button>
+            <button onclick="navigateTo('addInvoiceDorm.html')">Invoice Management</button>
+            <button onclick="navigateTo('viewInvoiceDorm.html')">Invoice Table</button>
+        </div>
+    </div>
+
+    <h2>Invoice Table</h2>
+    <button id="getAllInvoicesButton">Get All Invoices</button>
+    <div id="searchElements">
+        <input type="text" id="searchInput" placeholder="Search by InvoiceID or ResidentID">
+        <button id="searchInvoicesButton">Search</button>
+    </div>
+    <table id="invoicesTable">
+        <thead>
+            <tr>
+                <th>Invoice ID</th>
+                <th>Room Number</th>
+                <th>Resident ID</th>
+                <th>Water Cost</th>
+                <th>Electricity Cost</th>
+                <th>Rent</th>
+                <th>Total Amount</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="./script/viewInvoiceDorm.js"></script>
+</body>
+
+</html>

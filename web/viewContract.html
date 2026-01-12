@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contract Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script/home.js"></script>
+</head>
+
+<body>
+
+    <div id="links">
+        <h2>Navigation</h2>
+        <div class="nav">
+            <button onclick="navigateTo('addContract.html')">Contract Management</button>
+            <button onclick="navigateTo('viewContract.html')">Contract Table</button>
+            <button onclick="navigateTo('addResident.html')">Resident Management</button>
+            <button onclick="navigateTo('viewResident.html')">Resident Table</button>
+            <button onclick="navigateTo('addInvoiceDorm.html')">Invoice Management</button>
+            <button onclick="navigateTo('viewInvoiceDorm.html')">Invoice Table</button>
+        </div>
+    </div>
+
+    <h2>Contract Table</h2>
+    <button id="getAllContractsButton">Get All Contracts</button>
+    <div id="searchElements">
+        <input type="text" id="searchInput" placeholder="Search by Name or ID">
+        <button id="searchContractsButton">Search</button>
+    </div>
+    <table id="contractsTable">
+        <thead>
+            <tr>
+                <th>Contract ID</th>
+                <th>Date In</th>
+                <th>Date Out</th>
+                <th>Room Number</th>
+                <th>Resident ID</th>
+                <th>Employee ID</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src='./script/viewContract.js'></script>
+</body>
+
+</html>
